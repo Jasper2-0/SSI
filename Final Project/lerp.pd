@@ -1,0 +1,15 @@
+#N canvas 403 508 450 300 10;
+#X obj 126 24 inlet normvalue;
+#X obj 168 61 inlet min;
+#X obj 232 61 inlet max;
+#X obj 126 217 outlet value;
+#X obj 153 113 -;
+#X obj 126 184 +, f 13;
+#X obj 126 146 *, f 5;
+#X connect 0 0 6 0;
+#X connect 1 0 4 1;
+#X connect 1 0 5 1;
+#X connect 2 0 4 0;
+#X connect 4 0 6 1;
+#X connect 5 0 3 0;
+#X connect 6 0 5 0;
