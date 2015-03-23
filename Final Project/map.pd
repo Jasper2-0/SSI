@@ -6,7 +6,7 @@
 #X obj 320 31 inlet max2;
 #X obj 150 247 outlet value;
 #X obj 150 195 lerp;
-#X obj 19 79 normalize;
+#X obj 74 94 normalize;
 #X connect 0 0 7 0;
 #X connect 1 0 7 1;
 #X connect 2 0 7 2;
