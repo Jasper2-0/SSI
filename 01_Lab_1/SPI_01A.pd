@@ -1,0 +1,45 @@
+#N canvas 170 22 656 596 10;
+#X floatatom 20 150 5 0 0 0 - - -, f 5;
+#X obj 20 180 sig~;
+#X obj 74 133 osc~ 1;
+#X floatatom 74 109 5 0 0 0 - - -, f 5;
+#X obj 59 256 osc~;
+#X obj 74 195 *~, f 14;
+#X floatatom 155 167 5 0 0 0 - - -, f 5;
+#X obj 59 222 +~;
+#X msg 19 93 440;
+#X obj 19 53 loadbang;
+#X obj 155 100 loadbang;
+#X obj 74 52 loadbang;
+#X msg 155 136 200;
+#X msg 74 84 4;
+#X obj 58 365 dac~ 1 2;
+#X obj 58 307 stereo_control_version;
+#X obj 190 283 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9800 1;
+#X obj 187 234 loadbang;
+#X msg 187 257 0.5;
+#X text 328 274 use the slider to position the sound!;
+#X obj 1 1 cnv 15 640 30 empty empty Lab_1_-_Exercise_1:_Stereo 20
+12 0 14 -204800 -1 0;
+#X obj -1 554 cnv 15 640 30 empty empty Sound_Space_Interaction_2015_Media_Technology_MSc._Programme
+20 12 0 14 -191407 -66577 0;
+#X connect 0 0 1 0;
+#X connect 1 0 7 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 15 0;
+#X connect 5 0 7 1;
+#X connect 6 0 5 1;
+#X connect 7 0 4 0;
+#X connect 8 0 0 0;
+#X connect 9 0 8 0;
+#X connect 10 0 12 0;
+#X connect 11 0 13 0;
+#X connect 12 0 6 0;
+#X connect 13 0 3 0;
+#X connect 15 0 14 0;
+#X connect 15 1 14 1;
+#X connect 16 0 15 1;
+#X connect 17 0 18 0;
+#X connect 18 0 16 0;

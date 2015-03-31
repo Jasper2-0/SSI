@@ -1,0 +1,34 @@
+#N canvas 0 22 1063 828 10;
+#X obj 97 138 vsl 15 128 1 100 1 0 empty empty empty 0 -9 0 10 -191407
+-66577 -1 8100 1;
+#X floatatom 147 319 5 0 0 0 - - -, f 5;
+#X obj 137 340 dbtorms;
+#X floatatom 147 368 5 0 0 0 - - -, f 5;
+#X obj 137 397 t b f;
+#X obj 97 279 tgl 15 0 empty empty Mute 17 7 0 10 -258113 -262144 -1
+0 1;
+#X obj 97 396 == 0;
+#X obj 137 429 *, f 5;
+#X obj 137 451 sig~;
+#X obj 137 473 lop~ 1;
+#X obj 86 531 *~;
+#X obj 87 474 inlet~;
+#X obj 86 574 outlet~;
+#X obj 154 80 inlet volume;
+#X obj 159 220 inlet mute;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
+#X connect 4 0 7 0;
+#X connect 4 1 7 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 1;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 13 0 0 0;
+#X connect 14 0 5 0;
+#X coords 0 -1 1 1 60 180 1 90 120;
