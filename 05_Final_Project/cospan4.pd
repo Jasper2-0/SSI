@@ -1,5 +1,5 @@
 #N canvas 49 29 590 590 10;
-#X obj 177 4 inlet control;
+#X obj 77 4 inlet control;
 #X obj 177 29 sig~;
 #X obj 177 53 lop~ 1;
 #X obj 67 329 *~, f 19;
@@ -23,7 +23,10 @@
 #X obj 347 146 -~ 0.5;
 #X obj 451 146 -~ 0.75;
 #X obj 67 269 inlet~ signal;
-#X connect 0 0 1 0;
+#X obj 38 46 hsl 64 8 0 4 0 0 empty empty empty -2 -8 0 10 -204800
+-1 -1 0 1;
+#X floatatom 110 43 5 0 0 0 - - -, f 5;
+#X connect 0 0 24 0;
 #X connect 1 0 2 0;
 #X connect 2 0 10 0;
 #X connect 3 0 4 0;
@@ -49,3 +52,6 @@
 #X connect 23 0 7 0;
 #X connect 23 0 8 0;
 #X connect 23 0 9 0;
+#X connect 24 0 25 0;
+#X connect 25 0 1 0;
+#X coords 0 0 1 1 117 32 1 30 30;
