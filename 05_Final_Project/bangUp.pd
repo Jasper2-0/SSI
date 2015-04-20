@@ -1,0 +1,25 @@
+#N canvas 0 22 165 233 10;
+#X obj 13 39 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 13 114 spigot;
+#X floatatom 13 136 5 0 0 0 - - -, f 5;
+#X obj 13 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 13 16 inlet toggle;
+#X obj 13 178 outlet bang;
+#X obj 79 62 loadbang;
+#X floatatom 89 121 5 0 0 0 - - -, f 5;
+#X obj 13 58 t f f, f 6;
+#X obj 46 84 == 0;
+#X msg 79 84 1;
+#X connect 0 0 8 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 0 0;
+#X connect 6 0 10 0;
+#X connect 8 0 1 0;
+#X connect 8 1 9 0;
+#X connect 9 0 1 1;
+#X connect 9 0 7 0;
+#X connect 10 0 1 1;
