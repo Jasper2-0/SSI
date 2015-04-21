@@ -131,9 +131,9 @@
 #X floatatom 633 355 5 0 0 0 - - -, f 5;
 #X floatatom 720 355 5 0 0 0 - - -, f 5;
 #X obj 633 92 vsl 15 128 -1 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5927 1;
+-1 -1 0 1;
 #X obj 723 209 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7726 1;
+-1 -1 0 1;
 #X floatatom 720 297 5 0 0 0 - - -, f 5;
 #X floatatom 633 295 5 0 0 0 - - -, f 5;
 #X obj 704 235 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -229,7 +229,7 @@
 #X obj 357 658 r p1_ry;
 #X obj 901 697 r p1_rx;
 #X obj 904 721 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6773 1;
+-1 -1 0 1;
 #X obj 510 916 metro;
 #X obj 386 913 timebase;
 #X obj 114 1968 catch~ out1;
@@ -272,11 +272,14 @@
 #X floatatom 886 845 5 0 0 0 - - -, f 5;
 #X floatatom 886 886 5 0 0 0 - - -, f 5;
 #X obj 889 920 hsl 128 15 0 4 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8763 1;
-#X obj 824 708 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+-1 -1 0 1;
+#X obj 824 708 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 886 864 / 25;
 #X obj 824 728 metro 5;
+#X obj 1161 869 dac~ 1 2;
+#X obj 1111 779 rev2~, f 17;
+#X floatatom 1143 726 5 0 0 0 - - -, f 5;
 #X connect 1 0 43 0;
 #X connect 2 0 44 0;
 #X connect 3 0 45 0;
@@ -448,3 +451,6 @@
 #X connect 224 0 226 0;
 #X connect 225 0 222 0;
 #X connect 226 0 219 0;
+#X connect 228 0 227 0;
+#X connect 228 1 227 1;
+#X connect 229 0 228 1;
