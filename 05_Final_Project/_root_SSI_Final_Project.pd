@@ -361,7 +361,7 @@
 #X obj 1679 1600 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1654 1715 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 2030 1757 multipan4;
 #X floatatom 2108 1730 5 0 0 1 Period - -, f 5;
 #X obj 1547 2081 throw~ out1;
