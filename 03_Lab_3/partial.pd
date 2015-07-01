@@ -6,21 +6,21 @@
 #X obj 4 356 outlet~;
 #X obj 4 212 inlet;
 #X obj 43 212 inlet;
-#X obj 88 29 vsl 15 128 0 1000 0 0 empty empty Attack 0 -9 0 10 -216371
+#X obj 88 29 vsl 15 128 0 1000 0 1 empty empty Attack 0 -9 0 10 -216371
 -1 -1 0 1;
-#X obj 173 29 vsl 15 128 0 1 0 0 empty empty Sustain 0 -9 0 10 -216371
+#X obj 173 29 vsl 15 128 0 1 0 1 empty empty Sustain 0 -9 0 10 -216371
+-1 -1 12700 1;
+#X obj 132 29 vsl 15 128 0 1000 0 1 empty empty Decay 0 -9 0 10 -216371
 -1 -1 0 1;
-#X obj 132 29 vsl 15 128 0 1000 0 0 empty empty Decay 0 -9 0 10 -216371
--1 -1 0 1;
-#X obj 226 30 vsl 15 128 0 1000 0 0 empty empty Release 0 -9 0 10 -216371
--1 -1 0 1;
+#X obj 226 30 vsl 15 128 0 1000 0 1 empty empty Release 0 -9 0 10 -216371
+-1 -1 6900 1;
 #X floatatom 88 178 5 0 0 0 - - -, f 5;
 #X floatatom 173 178 5 0 0 0 - - -, f 5;
 #X floatatom 132 178 5 0 0 0 - - -, f 5;
 #X floatatom 226 177 5 0 0 0 - - -, f 5;
 #X obj 4 328 *~, f 48;
-#X obj 289 30 vsl 15 128 0 1 0 0 empty empty Amp 0 -9 0 10 -99929 -262144
--262144 0 1;
+#X obj 289 30 vsl 15 128 0 1 0 1 empty empty Amp 0 -9 0 10 -99929 -262144
+-262144 12700 1;
 #X floatatom 289 177 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 1;
 #X connect 1 0 15 0;
